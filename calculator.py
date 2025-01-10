@@ -1,8 +1,5 @@
 def main():
     x = int(input("Enter a number: "))
-    print("Square your number", f'{square(x)}')
+    print("Square of nuber is: ", f'{x**2}')
     
-def square(x):
-    return x * x
-
 main()
