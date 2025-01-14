@@ -7,5 +7,5 @@
 
 
 # #use for loop to print "Meow" 3 times
-for i in range(3):
+for _ in range(3):
     print("Meow")
