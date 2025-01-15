@@ -5,12 +5,8 @@ def main():
 def get_int():
     while True:
         try:
-            x = int(input("Enter a number: "))
-            return x
+            return int(input("Enter a number: "))
         except ValueError:
-            print("That's not a valid number!") 
-        else:
-            break
-    return x
+            pass 
 
 main()
