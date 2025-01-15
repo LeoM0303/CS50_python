@@ -1,6 +1,6 @@
 def main():
     x = get_int()
-    print(x)
+    print(f"{x} is a number")
 
 def get_int():
     while True:
