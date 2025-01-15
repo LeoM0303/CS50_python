@@ -1,5 +1,6 @@
 try:
     x = int(input("Enter a number: "))
-    print(f'You entered {x}')
 except ValueError:
-    print("That's not a number!")
+    print("That's not a valid number!")
+else: 
+    print(f'You entered {x}')   
