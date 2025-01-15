@@ -3,10 +3,10 @@
 import random
 
 def main():
-    get_rand()
+    result  = get_rand()
+    print(f'The result is {result}')
     
 def get_rand():
-    coin = random.choice(['heads', 'tails'])
-    print(coin)
+    return random.choice(['heads', 'tails'])
 
 main()
