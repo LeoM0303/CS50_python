@@ -12,5 +12,5 @@ def mix_list():
     for result in dataset:
         shuffle(dataset)
         return dataset
-
+    
 main()
