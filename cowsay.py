@@ -2,6 +2,7 @@
 import cowsay
 
 name = input("Enter your name: ")
+name = name.capitalize()
 
 def main():
     result = get_input()
@@ -9,6 +10,6 @@ def main():
 
 
 def get_input():
-    cowsay.cow(f'Hello, {name}')
+    cowsay.tux(f'Hello, {name}')
 
 main()
