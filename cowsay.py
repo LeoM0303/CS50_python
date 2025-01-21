@@ -1,4 +1,14 @@
 ##Import the cowsay module pip install cowsay
 import cowsay
 
-cowsay.cow('Hello, World!')
+name = input("Enter your name: ")
+
+def main():
+    result = get_input()
+    print(result)
+
+
+def get_input():
+    cowsay.cow(f'Hello, {name}')
+
+main()
