@@ -1,13 +1,10 @@
-#in console write: 
-# pip install requests
-# python3 iTunes.py weezer(or different other songs)
-
-import json
+import json 
 import requests
-import sys
+import sys 
 
-if len(sys.argv) != 2:
-    sys.exit()
-
-responce = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term="+sys.argv[1])
-print(json.dumps(responce.json(), indent=2))
+def responce():
+    if le(sys.argv) != 2:
+        sys.exit()
+        
+responce = requests.get("https://itunes.apple.com/search?entity=song&limit=100&term="+sys.argv[1])
+print(json.dumps(responce.json(), indent=4))
