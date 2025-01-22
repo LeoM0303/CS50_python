@@ -1,7 +1,11 @@
 from calculator import square
+import pytest
 
 def main():
-    test_square()
+    test_positive()
+    test_negative()
+    test_zero()
+    test_str()
 
 def test_positive():
     assert square(2) == 4
@@ -19,5 +23,10 @@ def test_negative():
 
 def test_zero():
     assert square(0) == 0
+
+def test_str():
+    with pytest.raises(TypeError):
+        square("cat")
+
 
 # Run the test
