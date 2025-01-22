@@ -3,7 +3,7 @@ import requests
 import sys 
 
 def responce():
-    if le(sys.argv) != 2:
+    if len(sys.argv) != 2:
         sys.exit()
         
 responce = requests.get("https://itunes.apple.com/search?entity=song&limit=100&term="+sys.argv[1])
