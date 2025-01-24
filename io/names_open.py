@@ -1,3 +1,8 @@
-with open('names.txt') as file:
+names = []
+
+with open("names.txt") as file:
     for line in file:
-        print("Hello, " + line.strip().title())
+        names.append(line.strip())
+
+for names in sorted(names, reverse=True):
+    print(f'Hello, {names}')
