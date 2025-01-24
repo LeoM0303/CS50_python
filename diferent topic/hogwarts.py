@@ -1,19 +1,3 @@
-# students = ['Harry', 'Ron', 'Hermione', 'Neville', 'Ginny']
-
-# for i in range(len(students)):
-#     print(i + 1, students[i])
-
-# students = {
-#     'Harry' : 'Gryffindor',
-#     'Draco' : 'Slytherin',
-#     'Luna' : 'Ravenclaw',
-#     'Hermonie' : 'Gryffindor',
-#     'Ron' : 'Gryffindor',
-# }
-
-# for student in students:
-#     print(student, students[student])
-
 def display_students():
     students = [
         {'name': 'Harry', 'house': 'Gryffindor'},
