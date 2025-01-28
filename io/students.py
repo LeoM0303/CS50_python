@@ -6,8 +6,8 @@ with open('students.csv') as file:
         student = {"name": name, "house": house}
         students.append(student)
 
-def get_name(student):
-    return student["name"]
+def get_house(student):
+    return student["house"]
 
-for student in sorted(students, key = get_name):
+for student in sorted(students, key = get_house, reverse = True):
     print(f'{student["name"]} from {student["house"]}')

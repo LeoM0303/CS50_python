@@ -1,15 +1,21 @@
-##Import the cowsay module pip install cowsay
+# Import the cowsay module
 import cowsay
 
-name = input("Enter your name: ")
-name = name.capitalize()
+# Prompt the user to input their name
+name = input("Enter your name: ").strip()  # Use strip to remove any extra spaces
+name = name.capitalize()  # Capitalize the first letter
+
 
 def main():
-    result = get_input()
-    print(result)
+    # Call the get_input function
+    get_input()
 
 
 def get_input():
-    cowsay.tux(f'Hello, {name}')
+    # Use cowsay.shark to display the message
+    cowsay.shark(f'Hello, {name}!')
 
-main()
+
+# Execute the main function
+if __name__ == "__main__":
+    main()
