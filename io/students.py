@@ -8,4 +8,4 @@ with open('students.csv') as file:
         students.append({"name": name, "home": home, "addresses": addresses})
 
 for student in sorted(students, key = lambda student: student["name"]):
-    print(f'{student["name"]} from {student["home"]} has addresses: {student["addresses"]}')
+    print(f'{student["name"]} from {student["home"]} has addresses: {student["addresses"]}, {reader}')
