@@ -2,9 +2,9 @@ students = []
 
 with open('students.csv') as file:
     for line in file:
-        name, house = line.rstrip().split(';')
-        student = {"name": name, "house": house}
+        name, home, adresses = line.rstrip().split(';')
+        student = {"name": name, "home": home, "addresses": adresses }
         students.append(student)
 
 for student in sorted(students, key = lambda student: student["name"]):
-    print(f'{student["name"]} from {student["house"]}')
+    print(f'{student["name"]} from {student["home"]} has addresses: {student["addresses"]}')
