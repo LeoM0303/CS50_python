@@ -1,10 +1,11 @@
+import csv
+
 students = []
 
 with open('students.csv') as file:
-    for line in file:
-        name, home, adresses = line.rstrip().split(';')
-        student = {"name": name, "home": home, "addresses": adresses }
-        students.append(student)
+    reader = csv.reader(file)
+    for name, home, addresses in reader:
+        students.append({"name": name, "home": home, "addresses": addresses})
 
 for student in sorted(students, key = lambda student: student["name"]):
     print(f'{student["name"]} from {student["home"]} has addresses: {student["addresses"]}')
