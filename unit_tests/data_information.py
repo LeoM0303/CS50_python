@@ -8,5 +8,5 @@ name, town, address = name.capitalize(), town.capitalize(), address.capitalize()
 
 
 with open('data_information.csv', 'a') as file:
-    writer = csv.writer(file)
-    writer.writerow([name, town, address])
+    writer = csv.DictWriter(file, fieldnames=["name", "town", "address"])
+    writer.writerow({"name": name, "town": town, "address": address})
