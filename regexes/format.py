@@ -1,5 +1,4 @@
 import re
-
 name = input("Enter your name: ").strip()
 
 if "," in name:
