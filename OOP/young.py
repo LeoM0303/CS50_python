@@ -1,12 +1,11 @@
 def main():
-    name = get_name()
-    house = get_house()
-    print(f"{name.capitalize()} from {house.capitalize()} lives in a young house.")
+    name, home = get_young()
+    print(f"{name.capitalize()} from {home.capitalize()} lives in a young house.")
 
-def get_name():
-    return input("What is your name? ")
+def get_young():
+    name = input("Enter your name: ")
+    home = input("Enter your house: ")
+    return name, home
 
-def get_house():
-    return input("What is your house? ")
-
-main()
+if __name__ == "__main__":
+    main()
