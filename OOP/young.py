@@ -1,12 +1,26 @@
-def main():
-    student = get_young()
-    print(f"{student['name'].capitalize()} from {student['home'].capitalize()} lives in a young house.")
+def main() -> None:
+    dataset = get_young()
+    name, home = dataset
 
-def get_young():
-    student = {}
-    student["name"] = input("Enter student name: ")
-    student["home"] = input("Enter student hometown: ")
-    return student
+    if not name or not home:
+        print("Invalid input")
+        return
 
-if __name__ == "__main__":
+    print(f"{name.capitalize()} lives in {home.capitalize()}")
+
+def get_young() -> tuple[str, str]:
+    while True:
+        name = input("Enter your name: ").strip()
+        if not name:
+            print("Invalid input")
+            continue
+
+        home = input("Enter your home: ").strip()
+        if not home:
+            print("Invalid input")
+            continue
+
+        return name, home
+
+if  __name__ == "__main__":
     main()
