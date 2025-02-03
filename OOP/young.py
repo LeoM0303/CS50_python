@@ -3,9 +3,10 @@ def main():
     print(f"{student[0].capitalize()} from {student[1].capitalize()} lives in a young house.")
 
 def get_young():
-    name = input("Enter your name: ")
-    home = input("Enter your house: ")
-    return name, home
+    student = {}
+    student["name"] = input("Enter student name: ")
+    student["home"] = input("Enter student hometown: ")
+    return student["name"], student["home"]
 
 if __name__ == "__main__":
     main()
