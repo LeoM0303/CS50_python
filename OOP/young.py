@@ -1,6 +1,6 @@
 def main():
-    name, home = get_young()
-    print(f"{name.capitalize()} from {home.capitalize()} lives in a young house.")
+    student = get_young()
+    print(f"{student[0].capitalize()} from {student[1].capitalize()} lives in a young house.")
 
 def get_young():
     name = input("Enter your name: ")
