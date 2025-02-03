@@ -1,22 +1,16 @@
 def main() -> None:
     dataset = get_young()
-    name, home = dataset
-
-    if not name or not home:
-        print("Invalid input")
+    if not dataset:
         return
 
+    name, home = dataset
     print(f"{name.capitalize()} lives in {home.capitalize()}")
 
 def get_young() -> tuple[str, str]:
     while True:
         name = input("Enter your name: ").strip()
-        if not name:
-            print("Invalid input")
-            continue
-
         home = input("Enter your home: ").strip()
-        if not home:
+        if not home or not name:
             print("Invalid input")
             continue
 
