@@ -1,3 +1,8 @@
+class Young:
+    def __init__(self, name: str, home: str) -> None:
+        self.name = name
+        self.home = home
+
 def main() -> None:
     dataset = get_young()
     if dataset is None:
